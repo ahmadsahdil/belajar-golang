@@ -1,0 +1,8 @@
+build image from Dockerfile
+> docker build -t go-belajar:v1 .
+create container from image
+> docker run -td -v <local code location>:<container code location> --name <container name> <image id> 
+run golang file 
+> docker exec -w <work directory in container> golang go run <file name>
+run golang test-unit 
+> docker exec -w /go/src/golang-database  golang go test -v -run=<function test name>
