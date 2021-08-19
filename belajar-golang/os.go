@@ -1,16 +1,16 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
 
-func main()  {
+func main() {
 	fmt.Println(os.Args)
 	name, err := os.Hostname()
 	if err == nil {
-		fmt.Println("Hostname: ",name)
-	}else{
+		fmt.Println("Hostname: ", name)
+	} else {
 		fmt.Println("error", err.Error())
 	}
 
@@ -18,6 +18,7 @@ func main()  {
 	password := os.Getenv("APP_PASSWORD")
 	fmt.Println(username)
 	fmt.Println(password)
-	
+
+	fmt.Println()
 
 }
