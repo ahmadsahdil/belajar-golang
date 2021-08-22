@@ -9,7 +9,7 @@ import (
 )
 
 func TestOpenConnection(t *testing.T) {
-	db, err := sql.Open("mysql", "root:password@tcp(mysql-server:3306)/golang")
+	db, err := sql.Open("mysql", "root:password@tcp(172.23.0.2:3306)/golang")
 	if err != nil {
 		panic(err)
 

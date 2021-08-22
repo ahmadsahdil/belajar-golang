@@ -6,7 +6,7 @@ import (
 )
 
 func GetConnection() *sql.DB {
-	db, err := sql.Open("mysql", "root:password@tcp(mysql-server:3306)/golang?parseTime=true")
+	db, err := sql.Open("mysql", "root:password@tcp(172.23.0.2:3306)/golang?parseTime=true")
 	if err != nil {
 		panic(err)
 	}
